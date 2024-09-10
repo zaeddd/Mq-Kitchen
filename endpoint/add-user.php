@@ -71,7 +71,7 @@ if (isset($_POST['register'])) {
             echo "
             <script>
                 alert('Check your email for verification code.');
-                window.location.href = 'http://localhost/system/verification.php';
+                window.location.href = '../verification.php';
             </script>
             ";
 
@@ -80,7 +80,7 @@ if (isset($_POST['register'])) {
             echo "
             <script>
                 alert('User Already Exists');
-                window.location.href = 'http://localhost/system/index.php';
+                window.location.href = '../index.php';
             </script>
             ";
         }
@@ -107,7 +107,7 @@ if (isset($_POST['verify'])) {
             echo "
             <script>
                 alert('Registered Successfully.');
-                window.location.href = 'http://localhost/system/index.php';
+                window.location.href = '../index.php';
             </script>
             ";
         } else {
@@ -118,7 +118,7 @@ if (isset($_POST['verify'])) {
             echo "
             <script>
                 alert('Incorrect Verification Code. Register Again.');
-                window.location.href = 'http://localhost/system/index.php';
+                window.location.href = '../index.php';
             </script>
             ";
         }
