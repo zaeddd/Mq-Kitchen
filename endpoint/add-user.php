@@ -55,10 +55,29 @@ if (isset($_POST['register'])) {
             $mail->addAddress($email);   
             $mail->addReplyTo('MQKitchen@gmail.com', 'MQ Kitchen'); 
         
-            //Content
-            $mail->isHTML(true);  
+            // Content
+            $mail->isHTML(true);  // Enable HTML content
+
+            // Long message in the body
             $mail->Subject = 'Verification Code';
-            $mail->Body    = 'Your verification code is: ' . $verificationCode; 
+            $mail->Body    = '
+                <html>
+                <body>
+                    <h1>Welcome to MQ Kitchen!</h1>
+                    <p>Dear ' . $firstName . ' ' . $lastName . ',</p>
+                    <p>Thank you for registering with us.</p>
+                    <p>Your verification code is: 
+                        <strong><span style="font-size:24px; color: #d24444;">' . $verificationCode . '</span></strong>
+                    </p>
+                    <p>Please enter this code in the verification page to complete your registration process.</p>
+                    <p>If you did not register for this service, please disregard this email.</p>
+                    <br>
+                    <p>Best regards,</p>
+                    <p>MQ Kitchen Team</p>
+                </body>
+                </html>
+            ';
+
             
             // Success sent message alert
             $mail->send();
