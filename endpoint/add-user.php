@@ -2,7 +2,7 @@
 include('../conn/conn.php');
 
 use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
+use PHPMailer\PHPMailer\Exception; 
 
 require 'PHPMailer/src/Exception.php';
 require 'PHPMailer/src/PHPMailer.php';
@@ -51,9 +51,9 @@ if (isset($_POST['register'])) {
             $mail->Port       = 465;                                    
         
             //Recipients
-            $mail->setFrom('lorem.ipsum.sample.email@gmail.com', 'Lorem Ipsum');
+            $mail->setFrom('MQKitchen@gmail.com', 'MQ Kitchen');
             $mail->addAddress($email);   
-            $mail->addReplyTo('lorem.ipsum.sample.email@gmail.com', 'Lorem Ipsum'); 
+            $mail->addReplyTo('MQKitchen@gmail.com', 'MQ Kitchen'); 
         
             //Content
             $mail->isHTML(true);  
