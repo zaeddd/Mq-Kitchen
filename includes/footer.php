@@ -1,3 +1,35 @@
+<style>
+    /* Footer */
+    footer {
+            background-color: black;
+            color: white;
+            padding: 40px 20px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        footer .column {
+            flex: 1 1 200px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        footer input[type="email"] {
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            margin-right: 10px;
+            width: 200px;
+        }
+
+        footer button {
+            padding: 10px;
+            border: none;
+            background-color: red;
+            color: white;
+            border-radius: 5px;
+        }
+</style>
 <footer>
     <div class="column">
         <h4>Exclusive</h4>

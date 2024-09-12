@@ -11,6 +11,15 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
 
     <style type="text/css">
+    /* Import Google font - Poppins */
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+        *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+        }
+
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -19,43 +28,7 @@
             flex-direction: column;
             min-height: 100vh;
         }
-
-        /* Header and Navbar */
-        .header {
-            background-color: black;
-            padding: 0px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-
-        .header img {
-            width: 80px;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 20px;
-        }
-
-        .nav-links a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .nav-links a:hover {
-            text-decoration: underline;
-        }
-
-        .search-bar {
-            padding: 5px;
-            width: 200px;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-        }
-
+        
         /* Main Content */
         .container {
             display: flex;
@@ -128,36 +101,6 @@
             gap: 20px;
         }
 
-        /* Footer */
-        footer {
-            background-color: black;
-            color: white;
-            padding: 40px 20px;
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        footer .column {
-            flex: 1 1 200px;
-            padding: 20px;
-            box-sizing: border-box;
-        }
-
-        footer input[type="email"] {
-            padding: 10px;
-            border-radius: 5px;
-            border: none;
-            margin-right: 10px;
-            width: 200px;
-        }
-
-        footer button {
-            padding: 10px;
-            border: none;
-            background-color: red;
-            color: white;
-            border-radius: 5px;
-        }
 
         /* Responsive Design */
         @media (max-width: 768px) {
