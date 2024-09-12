@@ -1,11 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
-
 <!-- start include header -->
 <?php include("includes/header.php"); ?>
 <!-- end include header -->
@@ -24,8 +16,8 @@
 
             <!-- Form Section -->
             <div class="main">
-               <!-- Login Area -->
 
+        <!-- Login Area -->
         <div class="login-container">
             <div class="login-form" id="loginForm">
                 <h2 class="text-center">Welcome to MQ Kitchen!</h2>
@@ -44,7 +36,7 @@
                 </form>
             </div>
         </div>
-
+        <!-- End Login Area -->
 
 
         <!-- Registration Area -->
@@ -86,10 +78,9 @@
                 </div>
                 <p>Already have an account? Login <span class="switch-form-link" onclick="showLoginForm()">Here.</span></p>
                 <button type="submit" class="btn btn-dark login-register form-control" name="register">Register</button>
-
             </form>
-
         </div>
+        <!-- Registration Area -->
             </div>
         </div>
     </div>
@@ -127,5 +118,3 @@
         }
     }
 </script>
-</body>
-</html>
