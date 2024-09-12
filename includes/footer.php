@@ -30,6 +30,7 @@
             border-radius: 5px;
         }
 </style>
+
 <footer>
     <div class="column">
         <h4>Exclusive</h4>

@@ -15,7 +15,7 @@
     .topbar{
         background-color:black;
         height:25px;
-        width: 100vw;
+        
     }
 
     .nav-links {
@@ -47,7 +47,7 @@
 <div class="topbar"></div>
 <div class="header">
     <img src="bgMQ.png" alt="MO Kitchen Logo">
-    
+    <hr> 
         <div class="nav-links">
         </div>
     <input type="text" class="search-bar" placeholder="What are you looking for?">   
